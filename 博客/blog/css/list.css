@@ -1,0 +1,182 @@
+/* 画辅助线 */
+* {
+    /* 先把浏览器自带的默认样式去掉 */
+    margin: 0;  /* 外间距 */
+    padding: 0; /* 内间距 */
+    box-sizing: border-box; /* 默认情况：宽高只处理内容；改成 border-box 之后，宽高 包含border + padding + content */
+}
+
+body {
+    /background-color: #DDDDDD;
+    background-image: url(../img/cat.jpg);
+    background-size: cover; /* 平铺 */
+}
+
+/*
+.导航区 {
+    background-color: #555555;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.公司品牌 {
+    background-color: #258c69;
+    height: 100%;
+}
+
+.功能区 {
+    background-color: #938662;
+    height: 100%;
+}
+*/
+
+
+.导航区 {
+    /background-color: #555555;
+    background-color: rgba(0, 0, 0, .5);
+
+    height: 50px;
+
+    position: relative;
+}
+
+.公司品牌 {
+    /background-color: #258c69;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.公司名称 {
+    /background-color: #f52534;
+    color: #eee;
+}
+
+.logo容器 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /background-color: purple;
+    overflow: hidden;
+}
+
+.功能区 {
+    /background-color: #938662;
+    position: absolute;
+    right: 100px;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.功能区 a {
+    /background-color: blue;
+    color: #eee;
+    text-decoration: none;
+}
+
+.主体区 {
+    /background-color: pink;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    width: 80%;
+    margin: 30px auto; /* 前面的是上下外间距； auto 是左右外间距，并且值相等，具体值让浏览器自动算出来 */
+}
+
+.个人中心 {
+    /background-color: #999999;
+    width: 140px;
+    height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 14%;
+    background-color:mintcream ;
+}
+
+.头像容器 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    overflow: hidden;
+}
+.头像 {
+    /background-color: #ccc;
+}
+.姓名 {
+    /background-color: #555;
+}
+.git地址 {
+    /background-color: #ccc;
+}
+.数量区 {
+    /background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 98px;
+}
+
+.列表区 {
+    background-color: #BBBBBB;
+    width: calc(100% - 140px - 30px);  /* calculate: 计算 */
+    min-height: 280px;
+    padding: 8px;
+}
+ol{
+    list-style: none;
+    background-color: #eeeeee;
+}
+.文章{
+    padding: 18px;
+    margin-bottom: 8px;
+}
+.文章 h2{
+    text-align: center;
+    line-height: 2em;
+}
+.发表日期{
+    text-align: center;
+    line-height: 2em;
+
+}
+.文章摘要{
+    min-height: 80px;
+    max-height: 140px;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+.文章 a{
+   display: block;
+    width: 110px ;
+    height: 40px;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border: 3px solid #000;
+    margin: 8px auto;
+}
+.文章 a:hover{
+background-color: orange;
+}
+

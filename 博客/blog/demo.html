@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>演示弹性布局</title>
+    <style>
+        body { background-color: #eee; }
+        .父容器 {
+            background-color: #666;
+            display: flex;
+            align-items: center;    /* 垂直方向 */
+            justify-content: space-between;
+            height: 120px;
+        }
+
+        .孩子1, .孩子2, .孩子3 {
+            width: 60px;
+            height: 60px;
+        }
+
+        .孩子1 {
+            background-color: #999;
+        }
+        .孩子2 {
+            background-color: #aaa;
+        }
+        .孩子3 {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="父容器">
+        <div class="孩子1"></div>
+<!--        <span class="孩子2"></span>-->
+        <div class="孩子3"></div>
+    </div>
+</body>
+</html>
